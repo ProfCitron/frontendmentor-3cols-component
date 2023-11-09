@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  padding: 60px 20px;
+  display: grid;
+}
+@media screen and (min-width: 400px) {
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  }
+}
+@media screen and (min-width: 1165px) {
+  .about {
+    height: 100vh;
+    align-content: center;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+}
+.about__card {
+  --clr-main: hsl(31deg, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+  background-color: var(--clr-main);
+  padding: 3em 4em;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsl(0deg, 0%, 95%);
+}
+@media screen and (min-width: 790px) {
+  .about__card {
+    border-radius: 8px 0 0 0;
+  }
+}
+@media screen and (min-width: 1165px) {
+  .about__card {
+    border-radius: 8px 0 0 8px;
+  }
+}
+.about__card img {
+  margin-bottom: 2em;
+}
+.about__card h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.about__card p {
+  margin-bottom: 2em;
+}
+.about__card a {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: hsl(0deg, 0%, 95%);
+  color: var(--clr-main);
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 2em;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  transition: all 0.4s ease-in-out;
+}
+.about__card a:hover {
+  background-color: var(--clr-main);
+  color: hsl(0deg, 0%, 95%);
+}
+.about__card--dark-cyan {
+  --clr-main: hsl(184deg, 100%, 22%);
+  border-radius: 0;
+}
+@media screen and (min-width: 790px) {
+  .about__card--dark-cyan {
+    border-radius: 0 8px 8px 0;
+  }
+}
+@media screen and (min-width: 1165px) {
+  .about__card--dark-cyan {
+    border-radius: 0;
+  }
+}
+.about__card--very-dark-cyan {
+  --clr-main: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+}
+@media screen and (min-width: 1165px) {
+  .about__card--very-dark-cyan {
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  left: 20px;
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding: 0.6em;
+  border-radius: 8px;
+}
+@media screen and (min-width: 450px) {
+  .attribution {
+    left: unset;
+    text-align: right;
+  }
+}
+.attribution a {
+  color: hsl(0deg, 0%, 95%);
+}
+
+/*# sourceMappingURL=style.css.map */

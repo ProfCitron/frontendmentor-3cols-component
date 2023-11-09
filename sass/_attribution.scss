@@ -1,0 +1,24 @@
+@use 'abstracts' as *;
+
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  left: 20px;
+  background-color: $clr-bright-orange;
+  color: $clr-very-light-grey;
+  font-family: $font-primary;
+  text-align: center;
+  font-size: $size;
+  padding: 0.6em;
+  border-radius: 8px;
+
+  @include bp(450px) {
+    left: unset;
+    text-align: right;
+  }
+
+  a {
+    color: $clr-very-light-grey;
+  }
+}
